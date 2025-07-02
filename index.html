@@ -9,13 +9,27 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js
 <link href="
 https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 " rel="stylesheet">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <title>Greeden</title>
 </head>
 
 <body>
     <!-- Responsive Navbar -->
-     <nav class="bg-green-100 p-6 flex items-center justify-between shadow-xl sticky top-0 z-10">
+     <nav class="bg-green-100 p-6 flex items-center justify-between shadow-xl sticky top-0 z-10 gap-2">
         <h1 class="text-2xl">GREEDEN</h1>
+       <div class="flex gap-2"><img src="img/location.png" class="w-6 hidden md:flex">
+        <div class="flex flex-col ">
+        <h2 class="font-bold">Where to delivery</h2>
+        <p class="text-red-600 ">Location Missing <select class="bg-green-100 outline-none"><option>India</option>
+        <option>USA</option>
+    <option>Londen</option>
+<option>Canada</option>
+<option>Paris</option></select> </p>
+        
+    </div>
+
+    </div>
+       <p class="border border-gray-400 rounded-xl w-96 p-3 bg-white flex hidden md:flex"><img src="img/search.png" class="w-5"> <input class="outline-none w-96" placeholder="sending good lucks plants or more"></p>
         
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-6 md:hidden">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -34,6 +48,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </ul>
         
      </nav>
+     
 <!-- Header Section -->
  <section class="bg-green-100 p-4 md:p-10 flex justify-center">
     <div>
