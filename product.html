@@ -17,7 +17,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
      <nav class="bg-green-100 p-6 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl ">GREEDEN</h1>
         
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-6 md:hidden">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 
@@ -35,12 +35,30 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         
      </nav>
 
+     <!-- side navbar -->
+      <div id="sideNav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000 " style="width: 50%; height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">x</p>
+        </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-600">
+                <li>
+                    <a class="hover:underline hover:text-black" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline  hover:text-black" href="product.html">Product</a>
+                </li>
+                <li>
+                    <a class="hover:underline  hover:text-black" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+
      <!-- our Products -->
       <section class="p-4 text-center">
     <h1 class="font-bold mt-5 text-3xl"> Our <spam class="text-green-200">Products</spam></h1>
-    <input placeholder="Search for a product..." class="border border-black p-2 m-5 mb-5" style="width: 80%;" ><br>
-    <div class="grid grid-cols-2 mt-5 gap-5 md:grid-cols-4">
-        <div>
+    <input id="search" placeholder="Search for a product..." class="border border-black p-2 m-5 mb-5" style="width: 80%;" ><br>
+    <div   class=" product-container grid grid-cols-2 mt-5 gap-5 md:grid-cols-4">
+       <div >
            <img src="./img/pot1.png" class="w-96 h-56 inline hover:shadow-xl rounded transform hover:-translate-y-2"> 
            <h1>Jade Plantt</h1>
            <p > <del class="text-gray-400">$407</del> $150 </p>
@@ -141,7 +159,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
    </section>
 
-   <!-- footer -->
+    <!-- footer -->
       <section class="bg-green-800  text-sm sm:grid-rows-3">
         <div class="p-5 flex   justify-between flex-wrap items-center">
         <h1 class="text-4xl font-bold text-white">Greeden</h1>
@@ -199,6 +217,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p class="pb-3">Terms & Conditions</p>
         </div>
       </section>
+     
+      <script src="index.js"></script>
     
 </body>
 </html>
