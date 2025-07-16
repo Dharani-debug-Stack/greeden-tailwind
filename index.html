@@ -25,13 +25,12 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <option>London</option>
 <option>Canada</option>
 <option>Paris</option></select> </p>
-        
-    </div>
+         </div>
 
     </div>
        <p class="border border-gray-400 rounded-xl w-96 p-3 bg-white flex hidden md:flex"><img src="img/search.png" class="w-5"> <input class="outline-none w-96" placeholder="sending good lucks plants or more..."></p>
         
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-6 md:hidden">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
 </svg>
 
@@ -48,6 +47,25 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </ul>
         
      </nav>
+
+     <!-- side navbar -->
+      <div id="sideNav" class="bg-green-100 fixed z-20 top-0  transition-all duration-1000 " style="width: 50%; height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">x</p>
+        </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-600">
+                <li>
+                    <a class="hover:underline hover:text-black" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline  hover:text-black" href="product.html">Product</a>
+                </li>
+                <li>
+                    <a class="hover:underline  hover:text-black" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            </div>
+        
      
 <!-- Header Section -->
  <section class="bg-green-100 p-4 md:p-10 flex justify-center">
@@ -158,7 +176,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <a href="#" class="border border-black p-3  bg-black text-white underline ">Subscribe</a>
      </section>
    
-   <!-- footer -->
+    <!-- footer -->
       <section class="bg-green-800  text-sm sm:grid-rows-3">
         <div class="p-5 flex   justify-between flex-wrap items-center">
         <h1 class="text-4xl font-bold text-white">Greeden</h1>
@@ -216,6 +234,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p class="pb-3">Terms & Conditions</p>
         </div>
       </section>
+
+      <script src="index.js"></script>
     
 </body>
 </html>
